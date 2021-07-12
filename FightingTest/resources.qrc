@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/new/char_img">
+        <file>char/GD/GordeauIdle.gif</file>
+    </qresource>
+    <qresource prefix="/new/backgrounds">
+        <file>BG/Main/station.png</file>
+    </qresource>
+</RCC>
