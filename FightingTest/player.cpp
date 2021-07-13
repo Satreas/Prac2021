@@ -3,9 +3,8 @@
 
 player::player(QWidget *parent) : QLabel(parent)
 {
-    HP=10000;
-    mSpeed=0;
-
+    isBusy=0;
+    walkSpeed=4;
 }
 
 player::~player()
@@ -13,7 +12,7 @@ player::~player()
 
 }
 
-void player::setIdleState(QString path)
+int player::getSpeed()
 {
-    statesMovie[STATE_IDLE]=new QMovie(path);
+    return  walkSpeed;
 }

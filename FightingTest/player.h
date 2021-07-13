@@ -12,12 +12,6 @@
 
 #include <windows.h>
 
-enum player_states
-{
-    STATE_IDLE=0,
-    STATE_WALK=1,
-};
-
 class player : public QLabel
 {
 
@@ -27,14 +21,13 @@ public:
     explicit player(QWidget *parent = 0);
     void setIdleState(QString path);
     void setHealth(int HP);
-    void setSpeed(int mSpeed);
+    int getSpeed();
+    int isBusy;
 
     ~player();
 private:
     int HP;
-    int mSpeed;
     int walkSpeed;
-    QMovie *statesMovie[2];
 };
 
 #endif // PLAYER_H

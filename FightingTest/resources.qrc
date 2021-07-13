@@ -1,6 +1,10 @@
 <RCC>
     <qresource prefix="/new/char_img">
-        <file>char/GD/GordeauIdle.gif</file>
+        <file>char/GD/Gor_Idle.gif</file>
+        <file>char/GD/Gor_Walk_Towards.gif</file>
+        <file>char/GD/Gor_Walk_Backwards.gif</file>
+        <file>char/GD/Gor_Punch.gif</file>
+        <file>char/GD/Gor_PunchLoop.gif</file>
     </qresource>
     <qresource prefix="/new/backgrounds">
         <file>BG/Main/station.png</file>
