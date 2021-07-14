@@ -5,8 +5,12 @@
         <file>char/GD/Gor_Walk_Backwards.gif</file>
         <file>char/GD/Gor_Punch.gif</file>
         <file>char/GD/Gor_PunchLoop.gif</file>
+        <file>char/AK/Aka_Idle.gif</file>
+        <file>char/AK/Aka_Retire.gif</file>
+        <file>char/AK/Aka_Walk.gif</file>
     </qresource>
     <qresource prefix="/new/backgrounds">
         <file>BG/Main/station.png</file>
+        <file>BG/Main/RailStation.png</file>
     </qresource>
 </RCC>

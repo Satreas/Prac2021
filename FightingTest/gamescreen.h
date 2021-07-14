@@ -14,10 +14,10 @@
 
 enum Players_States
 {
-    P1_STATE_IDLE = 0,
-    P1_STATE_WALK = 1,
-    P1_STATE_RETIRE = 2,
-    P1_STATE_PUNCH = 5
+    STATE_IDLE = 0,
+    STATE_WALK = 1,
+    STATE_RETIRE = 2,
+    STATE_PUNCH = 5
 };
 
 QT_BEGIN_NAMESPACE
@@ -35,6 +35,11 @@ public:
 private slots:
     void slotGameTimer();
     void P1Moveset(int frameNumber);
+    void P1Fightset(int frameNumber);
+    void getP1Pos();
+
+    void P2Moveset(int frameNumber);
+    void getP2Pos();
     void keyReleaseEvent(QKeyEvent *ev);
 
 private:
@@ -42,7 +47,13 @@ private:
     QTimer         *timer;
     QMovie         *p1PlayAnimation[10];
     player         *P1;
-
     int p1State;
+    int p1Multiplier;
+    int p1Width; int p1Height; int p1PosX; int p1PosY;
+
+    player         *P2;
+    QMovie         *p2PlayAnimation[10];
+    int p2State;
+    int p2Width; int p2Height; int p2PosX; int p2PosY;
 };
 #endif // GAMESCREEN_H
